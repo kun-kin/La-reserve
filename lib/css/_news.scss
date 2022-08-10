@@ -1,0 +1,87 @@
+.offers {
+    position: relative;
+    width: 100%;
+    overflow: hidden;
+    padding: 140px 0 60px;
+    .offers__header {
+        text-align: center;
+        margin-bottom: 40px;
+        &__headline {
+            color: var(--primary-color);
+        }
+        &__title {
+            color: #1c1c1a;
+            padding: 10px 0 0;
+        }
+    }
+    .offers__inner {
+        .offers-item {
+            display: block;
+            padding-bottom: 40px;
+            &__image {
+                position: relative;
+                margin-bottom: 40px;
+                margin-left: auto;
+                margin-right: auto;
+                overflow: hidden;
+                max-width: 500px;
+                &__wrapper {
+                    position: absolute;
+                    top: 0;
+                    left: 0;
+                    width: 100%;
+                    height: 100%;
+                    outline: 0;
+                    transition-delay: 0s;
+                    transition: border-width .3s cubic-bezier(.23, 1, .32, 1);
+                    transition-timing-function: ease-in-out;
+                    @media(min-width: 991px) {
+                        border-top: 60px solid #fff;
+                        border-bottom: 60px solid #fff;
+                    }
+                }
+                img {
+                    width: 100%;
+                    display: block;
+                }
+                @media(min-width:576px) {
+                    max-width: unset;
+                }
+            }
+            &__title {
+                font-family: Canela-Light, Calibri, Helvetica, Arial, sans-serif;
+                font-size: 26px;
+                line-height: 1.15em;
+                font-weight: 400;
+                font-style: normal;
+                letter-spacing: 0;
+                color: var(--primary-color);
+                padding: 10px 0;
+                a {
+                    color: var(--primary-color);
+                }
+                @media(min-width: 991px) {
+                    font-size: 35px;
+                }
+            }
+            &__link {
+                margin-top: 20px;
+            }
+            @media(min-width: 576px) {
+                padding-bottom: 80px;
+            }
+            @media(min-width:991px) {
+                padding-right: 30px;
+            }
+            @media(min-width:1200px) {
+                left: 8.333%;
+            }
+        }
+    }
+    @media(min-width: 991px) {
+        padding: 180px 0 70px;
+    }
+    @media(min-width:1500px) {
+        padding: 220px 0 90px;
+    }
+}
