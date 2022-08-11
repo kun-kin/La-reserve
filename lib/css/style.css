@@ -2258,6 +2258,7 @@ body.menu-open .menu--secondary {
 }
 .footer-newletter__form .newletter-form .container-text .checkmark {
   border-color: #fff;
+  transform: translate(0, -50%);
 }
 .footer-newletter__form .newletter-form .container-text .checkmark::after {
   background-color: #fff;

@@ -124,6 +124,7 @@
                     }
                     .checkmark {
                         border-color: #fff;
+                        transform: translate(0, -50%);
                         &::after {
                             background-color: #fff;
                         }
