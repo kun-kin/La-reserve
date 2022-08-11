@@ -385,3 +385,94 @@ ul,
 p {
     margin: 1em 0;
 }
+
+.topcontact {
+    display: flex;
+    justify-content: space-between;
+    padding: 5px 10px;
+    align-items: center;
+    font-weight: 600;
+    z-index: 111;
+    transition: all .5s ease-in-out;
+    font-size: 14px;
+}
+
+.contacthotel {
+    background: #0072bd;
+    z-index: 111111;
+    width: 100%;
+    transition: all .5s ease-in-out;
+}
+
+.order {
+    display: flex;
+    color: #FFf;
+    align-items: center;
+    font-weight: 600;
+    z-index: 111;
+}
+
+.topcontact a {
+    color: #FFF;
+    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+}
+
+.closetop {
+    padding-left: 10px;
+    color: #FFF;
+    z-index: 111;
+    background: transparent!important;
+}
+
+.topcontact .order a {
+    padding: 4px 15px;
+    border-radius: 5px;
+    background: #f8c218;
+}
+
+.contacthotel.fixedcontact {
+    position: fixed;
+    width: 100%;
+    z-index: 1111;
+    top: 0;
+    left: 0;
+}
+
+.fixed {
+    left: 0;
+    position: absolute;
+    top: 30px;
+    width: 100%;
+    z-index: 9;
+}
+
+@media(max-width:425px) {
+    .contacthotel {
+        position: fixed;
+        width: 100%;
+        z-index: 1111;
+        bottom: 0;
+        left: 0;
+    }
+    .contacthotel.fixedcontact {
+        position: fixed;
+        width: 100%;
+        z-index: 1111;
+        top: 95%;
+        left: 0;
+    }
+    .topcontact {
+        display: flex;
+        justify-content: space-between;
+        padding: 5px 0px;
+        align-items: center;
+        font-weight: 600;
+        z-index: 111;
+        transition: all .5s ease-in-out;
+        font-size: 13px;
+    }
+    .topcontact .order a {
+        padding: 5px 5px;
+        border-radius: 5px;
+    }
+}

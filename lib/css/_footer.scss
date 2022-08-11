@@ -27,6 +27,7 @@
                     font-family: Canela-Light, Calibri, Helvetica, Arial, sans-serif;
                     color: #fff;
                     font-size: 22px;
+                    margin-bottom: 8px;
                     border: 1px solid hsla(0, 0%, 100%, .4);
                     &::placeholder {
                         color: #fff;
@@ -102,6 +103,30 @@
                     }
                     input[type=checkbox]:checked+.check-text::after {
                         background-color: #fff;
+                    }
+                }
+                .container-text {
+                    padding-left: 40px;
+                    position: relative;
+                    margin-top: 10px;
+                    margin-bottom: 0;
+                    width: auto;
+                    display: inline-block;
+                    left: 50%;
+                    transform: translateX(-50%);
+                    p {
+                        font-family: Canela-Light, Calibri, Helvetica, Arial, sans-serif;
+                        font-size: 12px;
+                        line-height: 18px;
+                        color: #fff;
+                        cursor: pointer;
+                        display: inline;
+                    }
+                    .checkmark {
+                        border-color: #fff;
+                        &::after {
+                            background-color: #fff;
+                        }
                     }
                 }
                 &__submid {

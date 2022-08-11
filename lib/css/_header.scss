@@ -470,6 +470,9 @@ body.menu-open {
                     line-height: 1em;
                     border-radius: 0;
                     padding: 0;
+                    a {
+                        color: currentColor;
+                    }
                     span {
                         display: block;
                         padding: 19px 2px;
@@ -964,3 +967,29 @@ body.menu-open {
         }
     }
 }
+
+body.menu-open {
+    .header-group,
+    .header-apartment,
+    .menu--secondary {
+        display: none !important;
+    }
+}
+
+.header-group,
+.header-apartment,
+.menu--secondary {
+    display: none !important;
+}
+
+.lang {
+    &::after {
+        display: none;
+    }
+}
+
+// .header-sticky {
+//     .contacthotel {
+//         display: none;
+//     }
+// }
